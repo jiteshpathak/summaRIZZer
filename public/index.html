@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/public/favicon_io/favicon.ico">
+    <link rel="manifest" href="/public/favicon_io/site.webmanifest">
+    
+  </head>
+  <body>
+    <h1 class="name">SummaRIZZer</h1>
+    <p> Welcome to the AI Text Summarizer App! This app harnesses the power of Facebook's BART LLM to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, ours is a know it all!</p>
+    <p><i>You just have to Simply paste your text into the text area below and click the "Submit" button. </i></p>
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button" >
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box"> 
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
+      </div>
+    </div>
+    <footer>
+       <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Social media icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://x.com/jitesh2003"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/jiiteshh/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jitesh-pathak"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <p>Made with 💓 by Jitesh Pathak</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
